@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import cx from 'classnames';
 
-import Button from '../../components/Button';
-import Quantity from '../../components/Quantity';
+import Button from '../Button';
+import Quantity from '../Quantity';
 
 import styles from './ProductDetail.module.scss';
 
