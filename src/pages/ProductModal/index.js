@@ -3,9 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 
 import AppContext from '../../contexts/AppContext';
 
-import cx from 'classnames';
 import ProductDetail from '../../components/ProductDetail';
-
 import close from '../../assets/close.svg';
 
 import styles from './ProductModal.module.scss';
@@ -33,7 +31,7 @@ function ProductModal() {
         </Link>
         {selectedProductArray.length === 1 && (
           <>
-            <div className={cx(styles.products, styles.section)}>
+            <div className={styles.section}>
               <ProductDetail selectedProductArray={selectedProductArray} />
             </div>
           </>
