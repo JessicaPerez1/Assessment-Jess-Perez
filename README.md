@@ -1,65 +1,49 @@
-# Code Assessment: Web Edition ⭑⭑
+# Code Assessment: Jessica Perez ⭑⭑
 
-## Instructions
+## PRODUCT DETAIL PAGE
 
-### 1. Mirror the Repo
+## SCREENSHOTS
 
-For your own privacy, please do not fork this repo! Instead, follow these instructions to mirror the repository to a new private repo on your account:
+![](src/assets/PDP-large-screen-screenshot.png)
+![](src/assets/PDP-medium-screen-screenshot.png)
+![](src/assets/PDP-small-screen-screenshot.png)
 
-1. Create a new **private** repo on your github (eg, my-assessment)
+## Table of Contents
 
-2. On the command line, create a bare clone of our repo:
+1. [Why this assessment](#Why-this-assessment)
+2. [Usage](#Usage)
+3. [Challenges](#Challenges)
+4. [Available Scripts](#Available-Scripts)
+5. [Questions](#Questions)
 
-```
-git clone --bare git@github.com:workco/code-assessment-web-ui.git
-```
+## Why this assessment?
 
-3. Enter the temporary directory created by that command and push to your repo
+I chose this assessment because I had never done anything like this before. I think this type of functionnality is widely used and good to know how to implement a product detail page.
 
-```
-cd code-assessment-web-ui.git
-git push --mirror git@github.com:my-github-account/my-assessment.git
-```
+## Usage
 
-4. In the working directory of your choice, clone the repo to start local development
+- On the landing page, when a user clicks on the product image or title, the product modal opens with a view of the product's thumbnails, featured image and product details.
+- When a user clicks on a thumbnail, the featured image is updated.
+- The modal is responsive on different screen sizes.
+- When a user clicks on the 'X' to close the modal, it redirects to the landing page.
 
-```
-git clone git@github.com:my-github-account/my-assessment
-```
+## Challenges
 
-PS: Having trouble with these instructions? Reply to the talent team with your questions.
+I was not so familiar with all of the code, but after studying the existing codebase and doing some research, I eventually understood how it all worked.
 
-### 2. Implement Your Task(s)
+I did my best to make the modal responsive on all screen sizes, but could not figure out how to perfectly style the product title on large screen.
 
-Please refer to emailed instructions from the talent team as to which/how many tasks to work on. See the master task list [here](/tasks/tasks.md).
+The css could be "DRY'ed" a little, it seems a little repetitive, but my main goal was to get to the end result and have code that "works".
 
-Create a new branch off of a `master` for each task you work on (except #5). [Make one pull request](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request) for each task. Set this up like you would a real PR. Some features we’ll look for:
-
-- Informative, consistent commit message(s)
-- A detailed PR description. Explain the fixes or functionalities accomplished, any decisions you made along the way, or alternative implementations you may have considered or attempted. Feel free to add images and videos.
-- If applicable: Why did you choose this task?
-
-You can merge the PR when you’re done. Implement your tasks in any order you'd like.
-
-Other things we’re looking for in your work:
-
-- Code quality and consistency
-- New/updated Jest tests (when appropriate)
-- New/updated Storybook stories (when appropriate)
-
-### 3. Submit Your Work
-
-When you’re done with your work, please share your private repo with [workco-talent](https://github.com/workco-talent) and reply to your original email from the talent team to let us know you're done.
-
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
-### `yarn`
+#### `yarn`
 
 Install dependencies.
 
-### `yarn start`
+#### `yarn start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -67,26 +51,26 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `yarn test`
+#### `yarn test`
 
 Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn test:coverage`
+#### `yarn test:coverage`
 
 Runs tests (out of watch mode) and create a coverage report.
 
-### `yarn build`
+#### `yarn build`
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.<br />
 The build is minified and the filenames include the hashes.
 
-### `yarn lint`
+#### `yarn lint`
 
 Lint all .js files according to ESLint config. Run `yarn lint:fix` to automatically apply fixes.
 
-### `yarn storybook`
+#### `yarn storybook`
 
 Start a local Storybook server to browse component stories.
 
@@ -94,7 +78,7 @@ Start a local Storybook server to browse component stories.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### React
+#### React
 
 We're using [React](https://reactjs.org/), one of our favorite front-end libraries!
 
@@ -103,40 +87,14 @@ We're using [React](https://reactjs.org/), one of our favorite front-end librari
 - Routing via [React Router](https://reacttraining.com/react-router/web/guides/quick-start).
 - Most of our current React projects validate properties with TypeScript or Flow, but for this exercise we've opted to use Facebook's [PropTypes library](https://github.com/facebook/prop-types). See more info in [the React docs](https://reactjs.org/docs/typechecking-with-proptypes.html).
 
-### Sass & Fonts
+#### Sass & Fonts
 
 - Fonts are provided by Google Fonts.
 - Styling uses CSS modules and Sass. [This article](https://blog.bitsrc.io/how-to-use-sass-and-css-modules-with-create-react-app-83fa8b805e5e) contains a good writeup of how the two work together.
 
-### Storybook
+### Questions
 
-We use [Storybook](https://storybook.js.org/) on many of our projects to provide a living style guide of our app's components. This project includes some basic stories and the following addons:
+For any questions about this app, please refer to my Github page or contact me by email!
 
-- [Actions](https://github.com/storybookjs/storybook/tree/HEAD/addons/actions)
-- [Knobs](https://github.com/storybookjs/storybook/tree/HEAD/addons/knobs)
-- [Storysource](https://github.com/storybookjs/storybook/tree/HEAD/addons/storysource)
-
-### Jest
-
-Create React App comes with [Jest](https://jestjs.io/) [built-in](https://create-react-app.dev/docs/running-tests/). We've written a few tests and included the following dependencies to support them:
-
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- [React Hooks Testing Library](https://react-hooks-testing-library.com/)
-- [React Test Renderer](https://reactjs.org/docs/test-renderer.html)
-
-### ESLint
-
-To catch errors and enforce consistency, we're using [ESLint](https://eslint.org/) in two forms:
-
-- Create React App's [ESLint Config](https://github.com/facebook/create-react-app/tree/master/packages/eslint-config-react-app)
-- [ESLint Prettier Plugin](https://github.com/prettier/eslint-plugin-prettier)
-
-For more information, read about ESLint [in the Create React App docs](https://create-react-app.dev/docs/setting-up-your-editor#displaying-lint-output-in-the-editor).
-
-## Design/Browser Info
-
-You can find the Figma file for this project here: https://www.figma.com/file/ddnRArsK0ZT4CmmQvLvJTh/Code-Assessment. The "App" designs are for a mobile assessment - please disregard.
-
-Please see package.json for a list of supported browsers.
-
-Note: The UI is optimized for widths of greater than or equal to 375px.
+- [JessicaPerez1 Github link](https://github.com/JessicaPerez1)
+- 1jessicaperez@gmail.com
