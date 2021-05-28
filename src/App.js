@@ -6,6 +6,7 @@ import AppContext from './contexts/AppContext';
 
 import ProductLanding from './pages/ProductLanding';
 import Cart from './pages/Cart';
+import ProductModal from './pages/ProductModal';
 
 function App() {
   const appContextValue = useAppContext();
@@ -16,6 +17,9 @@ function App() {
         <Switch>
           <Route path="/cart">
             <Cart />
+          </Route>
+          <Route path="/product/:productId">
+            <ProductModal />
           </Route>
         </Switch>
       </Router>

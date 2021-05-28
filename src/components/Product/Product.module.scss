@@ -130,7 +130,9 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
+.hidden {
+  display: none;
+}
 .price {
   @include price;
   display: block;
