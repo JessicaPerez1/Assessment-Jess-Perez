@@ -1,0 +1,178 @@
+@import 'base.scss';
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  @include medium {
+    justify-content: space-evenly;
+  }
+  @include large {
+    flex-direction: row;
+  }
+}
+.products {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 30px getColumns(1, $bp-small);
+  @include medium {
+    height: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    width: getColumns(10, $bp-medium);
+    padding: unset;
+    margin-top: 20px;
+  }
+  @include large {
+    width: getColumns(28, $bp-large);
+  }
+}
+.section {
+  width: 100%;
+  padding: 5px getColumns(1, $bp-small);
+  @include medium {
+    padding: 0;
+  }
+  @include large {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px getColumns(1, $bp-large);
+  }
+}
+
+.image {
+  max-width: 20%;
+  height: auto;
+  @include medium {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1.7rem;
+  }
+  @include large {
+    max-width: 90px;
+    height: auto;
+  }
+}
+
+.featured {
+  width: 100%;
+  margin-bottom: 15px;
+  @include medium {
+    margin-bottom: 0px;
+    max-width: 80%;
+    height: auto;
+  }
+  @include large {
+    max-width: 495px;
+    width: auto;
+    margin-left: 0px 40px;
+  }
+}
+.thumbnails {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  max-width: getColumns(11, $bp-medium);
+  @include medium {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-right: 10px;
+  }
+  @include large {
+    justify-content: start;
+  }
+}
+
+.details {
+  width: 100%;
+  display: block;
+  flex-wrap: nowrap;
+
+  @include medium {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  @include large {
+    margin-top: 8rem;
+    justify-content: space-between;
+  }
+}
+.heading {
+  overflow: hidden;
+  white-space: wrap;
+  @include heading;
+  margin-bottom: 10px;
+  @include medium {
+  }
+  @include large {
+    width: 100%;
+  }
+}
+
+.productTitle {
+  @include small-only {
+    padding: 0px getColumns(1, $bp-small);
+  }
+  @include large {
+    height: 50px;
+    position: absolute;
+    margin-left: auto;
+    margin-top: auto;
+    left: 63%;
+    top: 4rem;
+    text-align: left;
+  }
+}
+
+.title {
+  @include body;
+  margin-right: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+  @include medium {
+    margin: 20px 0px;
+  }
+}
+.price {
+  display: block;
+  @include price;
+  margin-bottom: 15px;
+}
+
+.qtyBtn {
+  margin-top: 5px;
+  @include medium {
+    width: 100%;
+    display: inline-flex;
+  }
+  @include large {
+    display: block;
+  }
+}
+.qty {
+  width: 100%;
+  @include medium {
+    display: inline-block;
+  }
+}
+.addButton {
+  width: 100%;
+  @include small-only {
+    margin-top: 20px;
+  }
+  @include medium {
+    width: 45%;
+    display: inline-block;
+    margin-left: 30px;
+  }
+  @include large {
+    margin-left: 0px;
+    margin-top: 50px;
+    width: 250px;
+  }
+}
