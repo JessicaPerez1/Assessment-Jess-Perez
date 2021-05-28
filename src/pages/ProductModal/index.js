@@ -4,7 +4,7 @@ import { Link, useParams } from 'react-router-dom';
 import AppContext from '../../contexts/AppContext';
 
 import cx from 'classnames';
-import ProductDetail from '../ProductDetail';
+import ProductDetail from '../../components/ProductDetail';
 
 import close from '../../assets/close.svg';
 
